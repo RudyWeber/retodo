@@ -1,0 +1,29 @@
+{
+  "name": "retodo",
+  "version": "0.1.0",
+  "reason": {
+    "react-jsx": 2
+  },
+  "sources": [
+    {
+      "dir": "src",
+      "subdirs": true
+    }
+  ],
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+    "bs-express",
+    "@glennsl/bs-json",
+    "bs-axios",
+    "reason-react"
+  ],
+  "warnings": {
+    "error": "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}

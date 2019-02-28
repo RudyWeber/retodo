@@ -1,0 +1,38 @@
+{
+  "name": "extreme-startup",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "bsb -make-world",
+    "start": "bsb -make-world -w",
+    "server:dev": "nodemon ./src/server/Main.bs.js",
+    "server:run": "node ./src/server/Main.bs.js",
+    "client:dev": "node ./apiProxy.js",
+    "client:run": "node ./apiProxy.js",
+    "clean": "bsb -clean -clean-world",
+    "test": "jest",
+    "webpack:production": "NODE_ENV=production webpack"
+  },
+  "keywords": [
+    "BuckleScript"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@glennsl/bs-jest": "^0.4.4",
+    "bs-platform": "^4.0.5",
+    "bsb-js": "^1.1.7",
+    "http-proxy-middleware": "^0.19.0",
+    "nodemon": "^1.18.4",
+    "parcel": "^1.10.3",
+    "parcel-bundler": "^1.10.3"
+  },
+  "dependencies": {
+    "@ahrefs/bs-recharts": "^0.2.8",
+    "@glennsl/bs-json": "^3.0.0",
+    "bs-axios": "^0.0.39",
+    "bs-express": "^0.9.0",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2",
+    "reason-react": "^0.5.3"
+  }
+}
