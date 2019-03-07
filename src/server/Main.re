@@ -3,6 +3,8 @@ open Express.App;
 
 let app = express();
 
+app->useRouterOnPath(~path="/todos", TodosRouter.router);
+
 app->get(
   ~path="/",
   Middleware.from((_next, _req) =>
